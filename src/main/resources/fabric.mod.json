@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "treesreplant",
+	"version": "${version}",
+	"name": "Trees Replant",
+	"description": "Saplings have a chance to automatically plant themselves when they fall to the ground!",
+	"authors": [
+		"Streel, PitOfSomething, Modding by Kaupenjoe"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.streel.treesreplant.TreesReplant"
+		],
+		"client": [
+			"net.streel.treesreplant.TreesReplantClient"
+		],
+		"fabric-datagen": [
+			"net.streel.treesreplant.TreesReplantDataGenerator"
+		]
+	},
+	"mixins": [
+		"treesreplant.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
